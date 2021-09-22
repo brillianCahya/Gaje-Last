@@ -10,6 +10,9 @@ int main()
     int i, temporary;
     int jumlah_digit = 0;
 
+    cout<<"====================================================\n";
+    cout<<"         Program Hitung Harga Setelah Diskon\n";
+    cout<<"====================================================\n";
     cout<<"masukkan harga barang > ";
     cin>>harga;
 
@@ -21,7 +24,7 @@ int main()
         jumlah_digit++;
         temporary /= 10;
     }
-
+    
     cout<<"\nHarga"<<setw(19)<<"= "<<harga<<"\n";
     cout<<"Diskon 10% "<<"dari harga =  "<<diskon<<"\n";
     cout<<setw(25);

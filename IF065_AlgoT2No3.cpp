@@ -26,27 +26,36 @@ int main()
 
         subtotal[i] = harga[i]*jumlah[i];
         total_item += jumlah[i];
-        total += subtotal[i];
-        
+        total += subtotal[i];    
     }
     cout<<"Rekap Tabel :\n";
 
     for(i=1; i<=73; i++){
         cout<<"-";
     }
-    cout<<"\n| No |"<<setw(13)<<"Nama Barang"<<setw(12)<<"|"<<setw(11)<<"Jumlah  |"<<setw(17)<<"Harga Satuan  |"<<setw(15)<<"Sub Total  |\n";
+    cout<<"\n| No |"<<setw(13)<<"Nama Barang"
+        <<setw(12)<<"|"<<setw(11)<<"Jumlah  |"
+        <<setw(17)<<"Harga Satuan  |"
+        <<setw(15)<<"Sub Total  |\n";
+
     for (i=1; i<=73; i++){
         cout<<"-";
     }
     cout<<"\n";
+
     for(i=0; i<=2; i++){
-        cout<<"| "<<i+1<<"  |"<<setw(nama[i].size()+2)<<nama[i]<<setw(23-nama[i].size())<<"|"<<setw(8)<<jumlah[i]<<"  |"<<setw(14)<<harga[i]<<"  |"<<setw(11)<<subtotal[i]<<"  |\n";
+        cout<<"| "<<i+1<<"  |"<<setw(nama[i].size()+2)<<nama[i]<<setw(23-nama[i].size())
+            <<"|"<<setw(8)<<jumlah[i]<<"  |"<<setw(14)<<harga[i]
+            <<"  |"<<setw(11)<<subtotal[i]<<"  |\n";
     }
     for (i=1; i<=73; i++){
         cout<<"-";
     }
     cout<<"\n";
-    cout<<"|"<<setw(17)<<"Total"<<setw(13)<<"|"<<setw(8)<<total_item<<setw(3)<<"|"<<setw(28)<<total<<setw(4)<<"|\n";
+
+    cout<<"|"<<setw(17)<<"Total"<<setw(13)<<"|"<<setw(8)<<total_item
+        <<setw(3)<<"|"<<setw(28)<<total<<setw(4)<<"|\n";
+        
     for (i=1; i<=73; i++){
         cout<<"-";
     }

@@ -65,37 +65,27 @@ int main()
         if(plh == "001"){
             choice = produk[0];
             choice2 = harga[0];
-            cost = 50500;
-            cout<<"Produk Medis"<<setw(14)<<": "<<produk[0]<<"\n"
-                <<"Harga Produk"<<setw(14)<<": "<<harga[0]<<"\n";
+            cost = 50500;     
         }
         else if(plh == "002"){
             choice = produk[1];
             choice2 = harga[1];
             cost = 16000;
-            cout<<"Produk Medis"<<setw(14)<<": "<<produk[1]<<"\n"
-                <<"Harga Produk"<<setw(14)<<": "<<harga[1]<<"\n";
         }
         else if(plh == "003"){
             choice = produk[2];
             choice2 = harga[2];
             cost = 25000;
-            cout<<"Produk Medis"<<setw(14)<<": "<<produk[2]<<"\n"
-                <<"Harga Produk"<<setw(14)<<": "<<harga[2]<<"\n";
         }
         else if(plh == "004"){
             choice = produk[3];
             choice2 = harga[3];
             cost = 30000;
-            cout<<"Produk Medis"<<setw(14)<<": "<<produk[3]<<"\n"
-                <<"Harga Produk"<<setw(14)<<": "<<harga[3]<<"\n";
         }
         else if(plh == "005"){
             choice = produk[4];
             choice2 = harga[4];
             cost = 3000;
-            cout<<"Produk Medis"<<setw(14)<<": "<<produk[4]<<"\n"
-                <<"Harga Produk"<<setw(14)<<": "<<harga[4]<<"\n";
         }
         else{
             cout<<"\nKode Produk TIDAK Ditemukan !\n\n";
@@ -103,6 +93,8 @@ int main()
     }
     while(plh !="001" && plh !="002" && plh !="003" && plh !="004" && plh !="005");
 
+    cout<<"Produk Medis"<<setw(14)<<": "<<choice<<"\n";
+    cout<<"Harga Produk"<<setw(14)<<": "<<choice2<<"\n";
     cout<<"Jumlah Produk"<<setw(13)<<": ";
     cin>>jumlah_item;
     total_rega = jumlah_item*cost;
@@ -156,7 +148,7 @@ int main()
         <<"Kembali"<<setw(19)<<": "<<kembali<<"\n"
         <<"------------------------------------------------------------\n";
 
-    cout<<"Ulangi transaksi?\n"
+    cout<<"Ingin transaksi lagi?\n"
         <<"(press\"y\" or \"n\")"<<setw(9)<<": ";
     condition = getche();
     cout<<"\n";

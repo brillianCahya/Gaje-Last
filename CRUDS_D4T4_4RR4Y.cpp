@@ -208,8 +208,7 @@ void hapusData(int &sizeAry, string nama[], int umur[], string alamat[], string 
 
 void ubahData(int sizeAry, string nama[], int umur[], string alamat[], string prodi[])
 {
-    string namaBaru, alamatBaru, prodiBaru;
-    int diUbah, umurBaru;
+    int diUbah;
 
     system("cls");
     tampilData(sizeAry, nama, umur, alamat, prodi);

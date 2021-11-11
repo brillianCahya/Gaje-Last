@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int getOption(int &pilihan);
+void getOption(int &pilihan);
 void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string prodi[]);
 void tambahData(int &sizeAry, string nama[], int umur[], string alamat[], string prodi[]);
 void hapusData(int &sizeAry, string nama[], int umur[], string alamat[], string prodi[]);
@@ -61,7 +61,7 @@ int main()
     return 0;
 }
 
-int getOption(int &pilihan)
+void getOption(int &pilihan)
 {
     cout << "\n1-TAMPILKAN Data\n"
          << "2-TAMBAHKAN Data\n"
@@ -72,8 +72,7 @@ int getOption(int &pilihan)
          << "----------------\n"
          << "Select Option > ";
     cin >> pilihan;
-    cin.ignore();
-    return pilihan; 
+    cin.ignore(); 
 }
 
 void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string prodi[])

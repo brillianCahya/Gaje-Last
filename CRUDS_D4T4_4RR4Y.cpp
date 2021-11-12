@@ -84,7 +84,7 @@ void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string 
         if(nama[i].size() > dgtNama){
             dgtNama = nama[i].size();
         }
-        if(umur[i] > dgtUmur){
+        if(umur[i] > 9999){
             sepuh = umur[i];
         }
         if(alamat[i].size() > dgtAlamat){
@@ -94,6 +94,7 @@ void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string 
             dgtProdi = prodi[i].size();
         }
     }
+    sepuh /= 9999;
     while(sepuh != 0){
         sepuh /= 10;
         dgtUmur++;

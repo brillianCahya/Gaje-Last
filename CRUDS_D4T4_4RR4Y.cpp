@@ -14,13 +14,13 @@ void cariData(int sizeAry, string nama[], int umur[], string alamat[], string pr
 int main()
 {
     string 
-        nama[20] = {"Aku", "Kamu", "Kita"},
-        alamat[20] = {"Kebumen", "Solo", "Jogja"},
-        prodi[20] = {"Statistika", "Informatika", "Informatika"};
+        nama[20] = {"Aku"},
+        alamat[20] = {"Kebumen"},
+        prodi[20] = {"Komputasi"};
 
     int pilihan,
-        sizeAry = 3, 
-        umur[20] = {26, 26, 18};
+        sizeAry = 1, 
+        umur[20] = {19};
     
     enum choice {TAMPIL = 1, TAMBAH, UBAH, HAPUS, CARI, SELESAI};
 
@@ -94,7 +94,7 @@ void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string 
             dgtProdi = prodi[i].size();
         }
     }
-    sepuh /= 9999;
+    sepuh /= 10000;
     while(sepuh != 0){
         sepuh /= 10;
         dgtUmur++;
@@ -105,7 +105,7 @@ void tampilData(int sizeAry, string nama[], int umur[], string alamat[], string 
         cout << "=";
     }
     cout << "\n"
-         << "| " << setiosflags(ios::left) << setw(3) << "No" << "| " << setw(dgtNama+3) << "Nama"
+         << "| " << left << setw(3) << "No" << "| " << setw(dgtNama+3) << "Nama"
          << "| " << setw(dgtUmur+2) << "Umur" << "| " << setw(dgtAlamat+3) << "Alamat"
          << "| " << setw(dgtProdi+3) << "Prodi" << "|\n";
 
